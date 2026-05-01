@@ -15,7 +15,7 @@ const Footer = () => {
 	return (
 		<>
 			<div className="bg-[#0F5027] pt-20 pb-4">
-				<div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+				<div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 					<div>
 						<div className="flex items-center gap-2.5">
 							<Image src="/footerlogo.png" alt="Logo" width={60} height={60} />
@@ -31,33 +31,18 @@ const Footer = () => {
 						</p>
 					</div>
 
-					<div>
-						<h4 className="font-bold text-xl text-white">Quick Links</h4>
-						<ul className="mt-4">
-							{navItems.map((item) => (
-								<li key={item.href}>
-									<Link
-										href={item.href}
-										className="text-[#ffffff] hover:text-[#a6aea9] transition-colors duration-500"
-									>
-										{item.name}
-									</Link>
-								</li>
-							))}
-						</ul>
-					</div>
-					<div>
+					<div className="mt-6.25">
 						<h4 className="font-bold text-xl text-white">About Us</h4>
-						<p className="text-[#ffffff] text-sm mt-4">
+						<p className="text-[#ffffff] text-sm mt-8">
 							Qurbani Hat is a leading online platform dedicated to connecting
 							buyers and sellers of qurbani animals. We provide a seamless and
 							secure marketplace for individuals to find and book high-quality
 							livestock for their qurbani needs.
 						</p>
 					</div>
-					<div>
+					<div className="mt-6.25">
 						<h4 className="font-bold text-xl text-white">Contact Us</h4>
-						<div className="space-y-2 mt-4">
+						<div className="space-y-2 mt-8">
 							<p className="text-[#ffffff] text-sm flex items-center gap-2">
 								<ImLocation />{" "}
 								<span>123, Main Road, Dhaka, DK, Bangladesh.</span>
@@ -70,9 +55,9 @@ const Footer = () => {
 							</p>
 						</div>
 					</div>
-					<div>
+					<div className="mt-6.25">
 						<h4 className="font-bold text-xl text-white">Social Links</h4>
-						<div className="flex gap-4 mt-4">
+						<div className="flex gap-4 mt-8">
 							<Link
 								href="#"
 								className="w-7.5 h-7.5 flex items-center justify-center bg-white text-[#0F5027] rounded-full hover:text-[#a6aea9] transition-colors duration-500"
