@@ -9,8 +9,11 @@ const AnimalCard = ({ animal }) => {
 						<Image
 							src={animal.image}
 							alt={animal.name}
-							width={300}
-							height={200}
+							width={400}
+							height={300}
+							className="rounded-xl object-cover"
+							placeholder="blur"
+							blurDataURL={animal.blur}
 						/>
 					</figure>
 					<div className="card-body">
