@@ -3,7 +3,9 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import AnimalCard from "../cardUI/AnimalCard/AnimalCard";
 
 const FeaturedAnimals = async () => {
-	const res = await fetch("https://qurbani-hat-two.vercel.app/animal.json");
+	const res = await fetch("http://localhost:3000/animal.json", {
+		cache: "no-store",
+	});
 	const animals = await res.json();
 	console.log(animals);
 	const cow = animals.filter((a) => a.type.toLowerCase() === "cow").slice(0, 2);
@@ -13,7 +15,7 @@ const FeaturedAnimals = async () => {
 	return (
 		<>
 			<div className="w-11/12 mx-auto">
-				<div className="flex items-center justify-between mt-10 mb-6">
+				<div className="flex items-center justify-between mt-10 mb-4">
 					<h2 className="font-bold text-2xl text-[#0F5027]">
 						Featured Animals
 					</h2>
@@ -25,7 +27,7 @@ const FeaturedAnimals = async () => {
 						<FaArrowRightLong className="group-hover:translate-x-1 transition-transform duration-300" />
 					</Link>
 				</div>
-				<div>
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 					{[...cow, ...goat].map((animal) => (
 						<AnimalCard key={animal.id} animal={animal} />
 					))}

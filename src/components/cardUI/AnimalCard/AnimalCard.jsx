@@ -4,26 +4,31 @@ const AnimalCard = ({ animal }) => {
 	return (
 		<>
 			<div>
-				<div className="card bg-base-100 w-96 shadow-sm">
+				<div className="card shadow-sm">
 					<figure>
 						<Image
 							src={animal.image}
 							alt={animal.name}
-							width={400}
-							height={300}
-							className="rounded-xl object-cover"
-							placeholder="blur"
-							blurDataURL={animal.blur}
+							width={300}
+							height={250}
+							style={{ objectFit: "cover", width: "100%", height: "250px" }}
 						/>
 					</figure>
 					<div className="card-body">
 						<h2 className="card-title">{animal.name}</h2>
-						<p>
-							A card component has a figure, a body part, and inside body there
-							are title and actions parts
-						</p>
-						<div className="card-actions justify-end">
-							<button className="btn btn-primary">Buy Now</button>
+						<div className="flex justify-between items-center">
+							<p className="font-medium text-sm text-[#555]">
+								Age: <span>{animal.age}</span> years
+							</p>
+							<p className="font-medium text-sm text-[#555] flex justify-end">
+								Weight: <span>{animal.weight}</span> kg
+							</p>
+						</div>
+						<p className="truncate">{animal.description}</p>
+						<div className="card-actions justify-start">
+							<p className="font-semibold text-lg text-[#0F5027] flex items-center">
+								Price: ${animal.price}
+							</p>
 						</div>
 					</div>
 				</div>

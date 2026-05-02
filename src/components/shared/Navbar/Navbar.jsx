@@ -17,7 +17,7 @@ const Navbar = () => {
 							alt="Logo"
 							width={65}
 							height={65}
-							objectFit="contain"
+							style={{ objectFit: "contain" }}
 						/>
 						<h3 className=" font-semibold text-2xl text-[#000000]">
 							<span className="text-[#0F5027] font-extrabold">Qurbani</span>
