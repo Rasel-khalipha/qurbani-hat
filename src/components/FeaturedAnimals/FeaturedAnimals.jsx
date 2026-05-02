@@ -14,14 +14,14 @@ const FeaturedAnimals = async () => {
 		.slice(0, 2);
 	return (
 		<>
-			<div className="w-11/12 mx-auto">
-				<div className="flex items-center justify-between mt-10 mb-4">
-					<h2 className="font-bold text-2xl text-[#0F5027]">
+			<div className="w-11/12 mx-auto mt-25">
+				<div className="flex items-center justify-between mb-6">
+					<h2 className="font-bold text-3xl text-[#0F5027]">
 						Featured Animals
 					</h2>
 					<Link
 						href="/animals"
-						className="flex items-center gap-2 group text-[#0F5027] text-lg font-bold py-2 px-4 rounded w-fit cursor-pointer mt-6 transition-colors duration-300"
+						className="flex items-center gap-2 group text-[#0F5027] text-lg font-bold rounded w-fit cursor-pointer transition-colors duration-300"
 					>
 						View All{" "}
 						<FaArrowRightLong className="group-hover:translate-x-1 transition-transform duration-300" />

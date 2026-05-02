@@ -4,8 +4,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const Banner = () => {
 	return (
 		<>
-			<div className="w-11/12 mx-auto ">
-				<div className="relative mt-6 min-h-75 md:min-h-150 overflow-hidden rounded-lg">
+			<div className="w-11/12 mx-auto mt-20">
+				<div className="relative min-h-75 md:min-h-150 overflow-hidden rounded-lg">
 					{/* Background Image */}
 					<Image
 						src="/banner.png"
@@ -24,7 +24,7 @@ const Banner = () => {
 							Find The Perfect animal for your qurbani.
 						</h1>
 
-						<p className="text-xs md:text-lg lg:text-xl max-w-xl">
+						<p className="text-xs md:text-sm lg:text-base max-w-xl">
 							Browse Healthy and Quality Animals for Your Qurbani. Find the
 							Perfect Sacrifice for Your Religious Observance. Shop Now for a
 							Seamless Qurbani Experience.

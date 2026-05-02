@@ -9,7 +9,7 @@ const Navbar = () => {
 	];
 	return (
 		<>
-			<div className="flex flex-col md:flex-row md:justify-between items-center py-2 w-11/12 mx-auto">
+			<div className="flex flex-col md:flex-row md:justify-between items-center py-2 w-11/12 mx-auto shadow-sm">
 				<div>
 					<Link href="/" className="flex items-center gap-2.5">
 						<Image
