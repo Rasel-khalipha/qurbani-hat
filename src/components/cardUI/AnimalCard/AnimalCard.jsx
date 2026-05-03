@@ -18,10 +18,11 @@ const AnimalCard = ({ animal }) => {
 						<h2 className="card-title">{animal.name}</h2>
 						<div className="flex justify-between items-center">
 							<p className="font-medium text-sm text-[#555]">
-								Age: <span>{animal.age}</span> years
+								<span className="font-bold">Age: </span> {animal.age} years
 							</p>
 							<p className="font-medium text-sm text-[#555] flex justify-end">
-								Weight: <span>{animal.weight}</span> kg
+								<span className="font-bold">Weight: </span>&nbsp;{" "}
+								{animal.weight} kg
 							</p>
 						</div>
 						<p className="truncate">{animal.description}</p>

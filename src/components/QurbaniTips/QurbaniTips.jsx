@@ -4,11 +4,11 @@ import { FaCalendarCheck, FaLeaf } from "react-icons/fa6";
 const TipsCard = () => {
 	return (
 		<>
-			<div className="w-11/12 mx-auto rounded-lg mt-20 bg-gray-100 ">
+			<div className="w-11/12 mx-auto rounded-lg mt-20 ">
 				<h2 className="text-3xl font-bold text-center mb-6 text-[#0F5027] pt-10">
 					Qurbani Tips
 				</h2>
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6 bg-gray-100 rounded-lg">
 					<div className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-md">
 						<div className="w-10 h-10 bg-green-500/30 rounded-full flex justify-center items-center text-center mb-3">
 							<FaHeartbeat className="text-xl text-[#0F5027]" />
