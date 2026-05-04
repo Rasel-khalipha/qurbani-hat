@@ -16,7 +16,7 @@ const FeaturedAnimals = async () => {
 		<>
 			<div className="w-11/12 mx-auto mt-25">
 				<div className="flex items-center justify-between mb-6">
-					<h2 className="font-bold text-3xl text-[#0F5027]">
+					<h2 className="font-bold text-xl md:text-3xl text-[#0F5027]">
 						Featured Animals
 					</h2>
 					<Link

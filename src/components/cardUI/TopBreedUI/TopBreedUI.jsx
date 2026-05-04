@@ -26,7 +26,7 @@ const TopBreedUI = ({ uniqueBreeds }) => {
 			{
 				breakpoint: 480,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 1,
 				},
 			},
 		],
@@ -49,11 +49,11 @@ const TopBreedUI = ({ uniqueBreeds }) => {
 											src={breed.image}
 											alt={breed.breed}
 											fill
-											className="object-contain group-hover:scale-110 transition duration-300"
+											className=" object-contain group-hover:scale-110 transition duration-300"
 										/>
 									</div>
 
-									<p className="mt-3 text-sm font-medium">{breed.breed}</p>
+									<p className="mt-3 text-lg font-bold">{breed.breed}</p>
 								</div>
 							))}
 						</Slider>
